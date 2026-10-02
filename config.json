@@ -1,0 +1,606 @@
+{
+  "dataset": "data/synthetic.npz",
+  "data_kind": "synthetic",
+  "description": "Synthetic smoke test only; not experimental measurements or CFD.",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "settings": {
+    "sample_rate": 2000,
+    "window": 100,
+    "stride": 20,
+    "horizon": 0.5,
+    "confirmation": 3
+  },
+  "split": {
+    "train": [
+      "train_a",
+      "train_b",
+      "train_c"
+    ],
+    "validation": [
+      "validation"
+    ],
+    "test": [
+      "test_a",
+      "test_b",
+      "test_c"
+    ]
+  },
+  "runs": {
+    "train_a": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S02",
+          "S03"
+        ],
+        "count_2_04": [
+          "S02",
+          "S04"
+        ],
+        "count_2_05": [
+          "S03",
+          "S04"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 1.95,
+      "recovery_s": 2.7
+    },
+    "train_b": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S02",
+          "S03"
+        ],
+        "count_2_04": [
+          "S02",
+          "S04"
+        ],
+        "count_2_05": [
+          "S03",
+          "S04"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 2.1,
+      "recovery_s": null
+    },
+    "train_c": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S02",
+          "S03"
+        ],
+        "count_2_04": [
+          "S02",
+          "S04"
+        ],
+        "count_2_05": [
+          "S03",
+          "S04"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 1.8,
+      "recovery_s": 2.65
+    },
+    "validation": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S02",
+          "S03"
+        ],
+        "count_2_04": [
+          "S02",
+          "S04"
+        ],
+        "count_2_05": [
+          "S03",
+          "S04"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 2.0,
+      "recovery_s": null
+    },
+    "test_a": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04",
+          "S05",
+          "S06"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_1_04": [
+          "S05"
+        ],
+        "count_1_05": [
+          "S06"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S01",
+          "S05"
+        ],
+        "count_2_04": [
+          "S01",
+          "S06"
+        ],
+        "count_2_05": [
+          "S02",
+          "S03"
+        ],
+        "count_2_06": [
+          "S02",
+          "S04"
+        ],
+        "count_2_07": [
+          "S02",
+          "S05"
+        ],
+        "count_2_08": [
+          "S02",
+          "S06"
+        ],
+        "count_2_09": [
+          "S03",
+          "S04"
+        ],
+        "count_2_10": [
+          "S03",
+          "S05"
+        ],
+        "count_2_11": [
+          "S03",
+          "S06"
+        ],
+        "count_2_12": [
+          "S04",
+          "S05"
+        ],
+        "count_2_13": [
+          "S04",
+          "S06"
+        ],
+        "count_2_14": [
+          "S05",
+          "S06"
+        ],
+        "count_4_00": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_4_01": [
+          "S01",
+          "S02",
+          "S03",
+          "S05"
+        ],
+        "count_4_02": [
+          "S01",
+          "S02",
+          "S03",
+          "S06"
+        ],
+        "count_4_03": [
+          "S01",
+          "S02",
+          "S04",
+          "S05"
+        ],
+        "count_4_04": [
+          "S01",
+          "S02",
+          "S04",
+          "S06"
+        ],
+        "count_4_05": [
+          "S01",
+          "S02",
+          "S05",
+          "S06"
+        ],
+        "count_4_06": [
+          "S01",
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "count_4_07": [
+          "S01",
+          "S03",
+          "S04",
+          "S06"
+        ],
+        "count_4_08": [
+          "S01",
+          "S03",
+          "S05",
+          "S06"
+        ],
+        "count_4_09": [
+          "S01",
+          "S04",
+          "S05",
+          "S06"
+        ],
+        "count_4_10": [
+          "S02",
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "count_4_11": [
+          "S02",
+          "S03",
+          "S04",
+          "S06"
+        ],
+        "count_4_12": [
+          "S02",
+          "S03",
+          "S05",
+          "S06"
+        ],
+        "count_4_13": [
+          "S02",
+          "S04",
+          "S05",
+          "S06"
+        ],
+        "count_4_14": [
+          "S03",
+          "S04",
+          "S05",
+          "S06"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 2.2,
+      "recovery_s": null
+    },
+    "test_b": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S02",
+          "S03"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 1.7,
+      "recovery_s": 2.6
+    },
+    "test_c": {
+      "sensor_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "configurations": {
+        "all": [
+          "S01",
+          "S02",
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "count_1_00": [
+          "S01"
+        ],
+        "count_1_01": [
+          "S02"
+        ],
+        "count_1_02": [
+          "S03"
+        ],
+        "count_1_03": [
+          "S04"
+        ],
+        "count_1_04": [
+          "S05"
+        ],
+        "count_2_00": [
+          "S01",
+          "S02"
+        ],
+        "count_2_01": [
+          "S01",
+          "S03"
+        ],
+        "count_2_02": [
+          "S01",
+          "S04"
+        ],
+        "count_2_03": [
+          "S01",
+          "S05"
+        ],
+        "count_2_04": [
+          "S02",
+          "S03"
+        ],
+        "count_2_05": [
+          "S02",
+          "S04"
+        ],
+        "count_2_06": [
+          "S02",
+          "S05"
+        ],
+        "count_2_07": [
+          "S03",
+          "S04"
+        ],
+        "count_2_08": [
+          "S03",
+          "S05"
+        ],
+        "count_2_09": [
+          "S04",
+          "S05"
+        ],
+        "count_4_00": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "count_4_01": [
+          "S01",
+          "S02",
+          "S03",
+          "S05"
+        ],
+        "count_4_02": [
+          "S01",
+          "S02",
+          "S04",
+          "S05"
+        ],
+        "count_4_03": [
+          "S01",
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "count_4_04": [
+          "S02",
+          "S03",
+          "S04",
+          "S05"
+        ]
+      },
+      "source": "synthetic signal generator; not CFD",
+      "pressure_unit": "arbitrary units",
+      "onset_s": 2.3,
+      "recovery_s": null
+    }
+  },
+  "training": {
+    "epochs": 40,
+    "patience": 8,
+    "batch_size": 256,
+    "samples_per_class_per_run": 4000,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "trees": 300,
+    "min_samples_leaf": 5
+  }
+}
